@@ -1,12 +1,4 @@
 ---
-layout: default
+title: 🈳空巢青年の博客（Lonely.Garden）👫🏻👫🏽👨‍👩‍👧‍👧🐶🧑🏼‍🤝‍🧑🏻👨‍👩‍👧‍👦
+redirect_to: https://lonely.garden
 ---
-
-{% assign redirects = site.pages | where_exp: "item", "item.redirect_to != nil" %}
-{% for page in redirects %}
-  [{{ page.url }}]({{ page.url | relative_url }}) 🔀 `{{ page.redirect_to }}`
-
-  > {{ page.title | escape }}
-
-  ---
-{% endfor %}
